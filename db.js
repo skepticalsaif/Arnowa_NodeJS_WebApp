@@ -8,11 +8,11 @@ const db = new Sequelize({
       rejectUnauthorized: false,
     },
   },
-  database: "",
-  port: "",
-  username: "",
-  password: "",
-  host: "",
+  database: "d6icjasd4plnf5",
+  port: "5432",
+  username: "wxufkowzoppawm",
+  password: "139b2b7a840edef16227c5e2992e81963361b941e3148dffe5b7b275c55464fd",
+  host: "ec2-54-243-92-68.compute-1.amazonaws.com",
 });
 
 const Users = db.define("user", {
