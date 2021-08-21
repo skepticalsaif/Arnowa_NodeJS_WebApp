@@ -14,10 +14,6 @@ app.set("view engine", "hbs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get("*", (request, response) => {
-  response.sendFile(path.join(__dirname, "/views/login.hbs"));
-});
-
 app.use(
   session({
     resave: true,
@@ -30,6 +26,10 @@ app.use(
     // }
   })
 );
+
+app.get("/", (req, res) => {
+  res.render("login");
+});
 
 app.use("/images", express.static(__dirname + "/images")); // new
 
