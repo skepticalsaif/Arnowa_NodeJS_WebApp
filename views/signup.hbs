@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>Signup</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center vc">
+      <div class="card" style="width: 50rem;">
+        <div class="card-body">
+          <img
+            src="../images/arnowa-logo-1.png"
+            class="card-img-top"
+            alt="Arnowa Image"
+          />
+          <h1>Signup</h1>
+          <form action="/signup" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                name="username"
+                id="username"
+                placeholder="Choose Username"
+              />
+            </div>
+            <br />
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Id</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                placeholder="Email ID"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                id="password"
+                placeholder="Enter Password"  
+            </div>
+            <br />
+            <div class="mb-3">
+               <label for="avatar">Upload Profile Photo</label>
+            </div>
+            <input type="file" name="avatar" id="avatar" placeholder="Profile Photo" />
+            <div class="d-grid gap-2 col-8 mx-auto">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
